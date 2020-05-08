@@ -1,0 +1,80 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 18,
+        "name": "verify if delete place is working",
+        "description": "",
+        "id": "validating-place-api\u0027s;verify-if-delete-place-is-working",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1015629500,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "Delete place payload",
+            "match": {
+              "location": "Test_Steps.delete_place_payload()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2943114500,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "usercalls \"DeletePlaceApi\" with \"Post\" http request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "DeletePlaceApi",
+                  "offset": 11
+                },
+                {
+                  "val": "Post",
+                  "offset": 33
+                }
+              ],
+              "location": "Test_Steps.usercalls_with_http_request(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1923000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "the api call is success with status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 41
+                }
+              ],
+              "location": "Test_Steps.the_api_call_is_success_with_status_code(int)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 17,
+            "name": "@DeletePlace"
+          }
+        ]
+      }
+    ],
+    "name": "Validating place api\u0027s",
+    "description": "",
+    "id": "validating-place-api\u0027s",
+    "keyword": "Feature",
+    "uri": "placeValidations.feature"
+  }
+]
